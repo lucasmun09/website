@@ -1,0 +1,6 @@
+baseURL = "https://lucasmun09.github.io/"
+languageCode = "en-us"
+title = "Lucas Mun's Blog Post"
+theme = "hugo-lamp"
+[params]
+	logo = "/img/avatar.jpg"              
