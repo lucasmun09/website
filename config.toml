@@ -1,6 +1,6 @@
 baseURL = "https://lucasmun.me"
 languageCode = "en-us"
-title = "Lucas Mun's Blog Post"
+title = "Lucas Mun's Engineering Blog"
 theme = "hugo-lamp"
 [params]
 	logo = "/img/avatar.jpg"              
