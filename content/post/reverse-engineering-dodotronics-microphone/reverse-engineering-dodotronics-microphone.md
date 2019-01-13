@@ -6,7 +6,7 @@ draft: false
 
 ## Introduction
 
-Dodotronics is one of the few reputable microphone brands that focuses on Bat recordings for research. As niche as the company's expertise sounds, there are currently no direct competitor that can deliver the quality and the price point Dodotronics's Mini microphone can offer. Without any alternatives, I have decided to create my own ultrasonic microphone that covers the sensitivities of 50kHz to 80kHz that can compete against **Dodotronic's Mini** **Microphone**. 
+Dodotronics is one of the few reputable microphone brands that focuses on Bat recordings for research. As niche as the company's expertise sounds, there are currently no direct competitor that can deliver the quality and the price point Dodotronics's Mini microphone can offer. Without any alternatives, I have decided to create my own ultrasonic microphone that roughly covers the sensitivities of 50kHz to 80kHz that can compete against **Dodotronic's Mini** **Microphone**. 
 
 ## Dodotronic's Mini Microphone
 
@@ -88,9 +88,13 @@ $$
 
 Fortunately, the 2V/us was the absolute minimum, and it was easier to find op-amps with higher slew rate. The amplifier that I found suitable was MCP6291T. It is the same SOT 23-3 package as the amplifiers inside the Dodotronics' microphones. 
 
- 	
+ 
+
+## Design of the Duck Microphone
 
 
+
+The DUCK microphone is heavily inspired by the Dodotronic's layout. The slimline and conoured shape towards the microphone sensor was used for the maximum 
 
 
 
