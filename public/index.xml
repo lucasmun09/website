@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome_page on Lucas Mun&#39;s Engineering Blog</title>
+    <link>https://lucasmun.me/</link>
+    <description>Recent content in Welcome_page on Lucas Mun&#39;s Engineering Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jun 2018 17:11:45 -0400</lastBuildDate>
+    
+	<atom:link href="https://lucasmun.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building a Handheld Raspberry Pi Nintendo Switch</title>
+      <link>https://lucasmun.me/post/building-a-handheld-raspberry-pi/building-a-handheld-raspberry-pi-nintendo-switch/</link>
+      <pubDate>Sun, 17 Jun 2018 17:11:45 -0400</pubDate>
+      
+      <guid>https://lucasmun.me/post/building-a-handheld-raspberry-pi/building-a-handheld-raspberry-pi-nintendo-switch/</guid>
+      <description>Building a Handheld Raspberry Pi Nintendo Switch Introduction When Nintendo&amp;rsquo;s Nintendo Switch was first introduced, I thought it was the perfect platform to game on the go. Ever since my Nintendo DS I got as a birthday present during my 6th grade birthday, I haven&amp;rsquo;t found any decent replacement for my on the go gaming need.
+Nintendo Switch&amp;rsquo;s design with its nice crispy 6 inch screen with detachable controller design inspired me to pursue my own handheld design.</description>
+    </item>
+    
+    <item>
+      <title>Creating an Ultrasonic Microphone</title>
+      <link>https://lucasmun.me/post/reverse-engineering-dodotronics-microphone/</link>
+      <pubDate>Sun, 17 Jun 2018 17:11:45 -0400</pubDate>
+      
+      <guid>https://lucasmun.me/post/reverse-engineering-dodotronics-microphone/</guid>
+      <description>Introduction Dodotronics is one of the few reputable microphone brands that focuses on Bat recordings for research. As niche as the company&amp;rsquo;s expertise sounds, there are currently no direct competitor that can deliver the quality and the price point Dodotronics&amp;rsquo;s Mini microphone can offer. Without any alternatives, I have decided to create my own ultrasonic microphone that roughly covers the sensitivities of 50kHz to 80kHz that can compete against Dodotronic&amp;rsquo;s Mini Microphone.</description>
+    </item>
+    
+  </channel>
+</rss>

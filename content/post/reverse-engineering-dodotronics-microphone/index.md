@@ -36,7 +36,7 @@ The Mini-Mic has offered variety of features that is very beneficial in a resear
 
 One side of Mini-Mic's PCB design was published in the microphone's documentation pages.
 
-![Momimic is composed by two linear  low dropdown voltage regulators and  a double low noise operational  amplifier. The amplification is fixed  and can be changed replacing one or  two resistors.  The standard values are:  RI: 10Kohm  R2: 22Khom  RI regulate the preamplification while  R2 the second amplification  The circuit  RI ](file:///C:/Users/Lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png) 
+![Momimic is composed by two linear  low dropdown voltage regulators and  a double low noise operational  amplifier. The amplification is fixed  and can be changed replacing one or  two resistors.  The standard values are:  RI: 10Kohm  R2: 22Khom  RI regulate the preamplification while  R2 the second amplification  The circuit  RI ](dodoschemtatic.png) 
 
 The microphone module is Knowle's FG-23629 microphone sensor with three leads. 
 
@@ -72,11 +72,9 @@ However, I was notified that the microphones sensitivity should be "adequate" en
 
 In this post,  FG-23629 will be used to explore and replicate Dodotronic's microphone. Thankfullly, Dodotronics has provided the top side of the PCB for reference.
 
-![dodoschemtatic](dodoschemtatic.png)
+![dodoschematicwithvalues](fromdodo.png)
 
-It can be clearly with this schematic and cross-referencing the parts that the Dodotronics has two amplifier IC and high pass filters set on them. By using a component meter that I have receieved from China, I was able to decode the resistor and capacitor values.
-
-![dodoschematicwithvalues](dodoschematicwithvalues.PNG)
+It can be seen clearly with this schematic and cross-referencing the parts that the Dodotronics has two amplifier IC and high pass filters set on them. By using a component meter that I have received from China, I was able to decode the resistor and capacitor values.
 
 From the calculations I have done, both amplifiers has the threshold frequency of 1.6kHz, presumably to reduce the signal saturation. From what I gathered, these amplifiers have the slew-rate at least of 2V/uS to be able to accurately amplify a signal of 100kHz.  This value was found by using the equation:
 

@@ -4,9 +4,9 @@ date: 2018-06-17T17:11:45-04:00
 draft: false
 ---
 
-Hello!
+Hi there! 
 
-You have stumbled across my blog. Honestly, I suck at writing. If you guys see any mistakes on the articles themselves, please let me know. I am trying to improve my writing voice and flow so most articles will have many problems grammatically. 
+I am currently a student at Virginia Tech pursuing computer engineering degree! The purpose of this blog is to document interesting projects I do and share it with others! I hope you will find these projects interesting as I have!
 
 Thanks you for visiting!
 
