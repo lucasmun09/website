@@ -5,4 +5,7 @@ theme = "hugo-lamp"
 [params]
 	logo = "/img/avatar.jpg" 
 	linkedin = "lucas-mun-693689150"
+	email = "lucasmun@vt.edu"
+	
+
              
