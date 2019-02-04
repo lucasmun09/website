@@ -3,4 +3,6 @@ languageCode = "en-us"
 title = "Lucas Mun's Engineering Blog"
 theme = "hugo-lamp"
 [params]
-	logo = "/img/avatar.jpg"              
+	logo = "/img/avatar.jpg" 
+	linkedin = "lucas-mun-693689150"
+             

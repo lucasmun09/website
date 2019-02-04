@@ -249,7 +249,7 @@
     margin: 2rem auto;
 
     img {
-      max-width: 100%;
+      max-width: 100%; 
       box-shadow: 2px 20px 40px 10px $box-shadow-dark;
 
       @media screen and (max-width: $tablet) {
@@ -264,5 +264,9 @@
         text-align: center;
       }
     }
+  }
+
+  img {
+    width: 20rem; 
   }
 }

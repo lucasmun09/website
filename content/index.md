@@ -6,9 +6,13 @@ draft: false
 
 Hello!
 
-You have stumbled across my blog. Honestly, I suck at writing. If you guys see any mistakes on the articles themselves, please let me know. I am trying to improve my writing voice and flow so most articles will have many problems grammatically. 
+I like build. As simple as that. Anything goes. From Microphone design, 3D printers, Arduino, to Web Scraping, I like to learn everything! Hopefully, you can find my projects interesting as I did! 
 
-Thanks you for visiting!
+
+
+Linkedin: [linkedin.com/in/lucas-mun-693689150](https://www.linkedin.com/in/lucas-mun-693689150)
+
+Email: lucasmun@vt.edu
 
 -Lucas Mun
 
