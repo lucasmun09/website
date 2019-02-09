@@ -10,24 +10,32 @@
     
 
     
-    <title>Lucas Mun&#39;s Engineering Blog</title>
+    <title>LCD Problem (two line of boxes) with Anet A8 3D Printer</title>
 
     
     
 
 
 
-
+  
   
   <meta name="author" content="" />
-  <meta name="description" content="" />
+  <meta name="description" content="This was originally posted on Wordpress.com. This post was migrated on 2/3/2019
+  Welcome   Two line of boxes are shown in the 2004A LCD.
+Do you have this problem and don&amp;rsquo;t want to read it over? Check if your pin 5 or the r/w pin is connected to ground. Also, check your little potentiometer at the back to see if your LCD contrast isn&amp;rsquo;t too high.
+Down the rabbit hole we go.">
 
   
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@gohugoio" />
-  <meta name="twitter:title" content="Lucas Mun&#39;s Engineering Blog" />
-  <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="https://lucasmun.me/img/avatar.jpg" />
+  
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gohugoio" />
+    <meta name="twitter:title" content="LCD Problem (two line of boxes) with Anet A8 3D Printer" />
+    <meta name="twitter:description" content="This was originally posted on Wordpress.com. This post was migrated on 2/3/2019
+  Welcome   Two line of boxes are shown in the 2004A LCD.
+Do you have this problem and don&amp;rsquo;t want to read it over? Check if your pin 5 or the r/w pin is connected to ground. Also, check your little potentiometer at the back to see if your LCD contrast isn&amp;rsquo;t too high.
+Down the rabbit hole we go." />
+    <meta name="twitter:image" content="https://lucasmun.me/img/avatar.jpg" />
+  
 
 
 
@@ -35,7 +43,7 @@
 <meta name="generator" content="Hugo 0.54.0">
 
 
-<link rel="canonical" href="https://lucasmun.me/">
+<link rel="canonical" href="https://lucasmun.me/post/lcd-problem-with-anet-a8/">
 <link rel="alternative" href="/index.xml" title="Lucas Mun&#39;s Engineering Blog" type="application/atom+xml">
 
 
@@ -81,7 +89,7 @@
     sizes="(max-width: 800px) 36px, 128px">
   </amp-img>
   
-    <h1 class="title"><a href="https://lucasmun.me" title="Lucas Mun&#39;s Engineering Blog">Lucas Mun&#39;s Engineering Blog</a></h1>
+    <h2 class="title"><a href="https://lucasmun.me" title="Lucas Mun&#39;s Engineering Blog">Lucas Mun&#39;s Engineering Blog</a></h2>
   
   <p class="subtitle"></p>
   <button class="menu-toggle" type="button" on="tap:sidebar.open">
@@ -126,67 +134,91 @@
 
 </header>
 
-  <section class="main entry-list">
-	<p>Hi there!</p>
-
-<p>I am currently a student at Virginia Tech pursuing computer engineering degree! The purpose of this blog is to document interesting projects I do and share it with others! I hope you will find these projects interesting as I have!</p>
-
-<p>Thanks you for visiting!</p>
-
-<p>-Lucas Mun</p>
-
-  
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">LCD Problem (two line of boxes) with Anet A8 3D Printer</h1>
+      <p class="entry-meta"><span class="entry-time">Jun 17, 2018</span> 3 min read</p>
+    </header>
     
-    
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://lucasmun.me/post/lcd-problem-with-anet-a8/" title="LCD Problem (two line of boxes) with Anet A8 3D Printer" class="entry-link">LCD Problem (two line of boxes) with Anet A8 3D Printer</a></h3>
-  </header>
 
-  <p class="entry-summary">This was originally posted on Wordpress.com. This post was migrated on 2/3/2019
-  Welcome   Two line of boxes are shown in the 2004A LCD.
-Do you have this problem and don’t want to read it over? Check if your pin 5 or the r/w pin is connected to ground. Also, check your little potentiometer at the back to see if your LCD contrast isn’t too high.
-Down the rabbit hole we go.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Jun 17, 2018</span> 3 min read</p>
-   
-  </footer>
+    <article class="post-content"><p>This was originally posted on Wordpress.com. This post was migrated on 2/3/2019</p>
+
+<figure>
+    <img src="lcdwithtwolines.jpg" height=".25"/> <figcaption>
+            <h4>Welcome</h4>
+        </figcaption>
+</figure>
+
+
+<p>Two line of boxes are shown in the 2004A LCD.</p>
+
+<p>Do you have this problem and don&rsquo;t want to read it over? Check if your pin 5 or the r/w pin is connected to ground. Also, check your little potentiometer at the back to see if your LCD contrast isn&rsquo;t too high.</p>
+
+<p>Down the rabbit hole we go.</p>
+
+<p>My friend Razi bought an identical 3D printer that I have bought from a different vendor. After helping out building his 3D printer kit for over a course of 6 hours, we found out that his LCD panel wasn&rsquo;t showing the menu. Instead, it was showing two lines filled with boxes which I initially assumed that the LCD was faulty. Without thinking, silly me, I desoldered the LCD module from the PCB panel and hooked it to my Arduino Nano. I uploaded an example code that was in Arduino IDE and what do you know, it works!</p>
+
+<figure>
+    <img src="lcd%20on%20breadboard.jpg"/> <figcaption>
+            <h4>Welcome</h4>
+        </figcaption>
+</figure>
+
+
+<p>Now I realized that the problem wasn&rsquo;t the LCD but the PCB board that was holding it.</p>
+
+<p>While examining the board, I noticed that the solder pads were basically ripped out during the process of removing the board. I really didn&rsquo;t worry since the problem was actually caused by the connection between the pins and the solder pads.</p>
+
+<p>After I rewired the LCD by following individual traces, I powered it up using the 3D printed controller and the outcome was depressing.</p>
+
+<figure>
+    <img src="lcdwithtwolines.jpg"/> <figcaption>
+            <h4>Welcome</h4>
+        </figcaption>
+</figure>
+
+
+<p>At this point, I was lost so I decided to look around at data sheet. It didn&rsquo;t tell me too much about the problem that I was having. I referred back to the wiring at the Arduino code and compared it to the pinout of the PCB board.</p>
+
+<p>WHAT DO YOU KNOW, ONE PIN WASN&rsquo;T CONNECTED!!!!!</p>
+
+<figure>
+    <img src="solderinglcd.jpg"/> <figcaption>
+            <h4>Welcome</h4>
+        </figcaption>
+</figure>
+
+
+<p>The pin was the R/W, or the Read/Write pin that allowed for the LCD to be &ldquo;written&rdquo; for new texts to be displayed. To be frank with you, there wasn&rsquo;t a trace connecting that pin to ground so I guess it was a manufacturing defect.</p>
+
+<figure>
+    <img src="lcdpinout.jpg"/> <figcaption>
+            <h4>Welcome</h4>
+        </figcaption>
+</figure>
+
+
+<p>So pin 5, R/W, or the Read/Write pin has to be pulled to ground by the looks of the specifications. After I connected pin 5 to ground, ta-dah, it starts working!</p>
+
+<figure>
+    <img src="workinglcd.jpg"/> <figcaption>
+            <h4>Welcome</h4>
+        </figcaption>
+</figure>
+
+
+<p>I have seen a lot of people online having problems with their LCD not functioning in their 3D printers. The 3D printer I got that was $200 shipped didn&rsquo;t have this problem but my friend&rsquo;s oddly did.</p>
+
+<p>So the life lesson today: Don&rsquo;t rip out anything initially. Check pins if they are connected correctly. Check solder pads if they are correctly connected. If your life gives boxes of two lines in your LCD, make sure you connect pin 5 to ground.</p>
 </article>
-
+    <footer class="post-footer">
       
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://lucasmun.me/post/reverse-engineering-dodotronics-microphone/" title="Creating an Ultrasonic Microphone" class="entry-link">Creating an Ultrasonic Microphone</a></h3>
-  </header>
-
-  <p class="entry-summary">Introduction Dodotronics is one of the few reputable microphone brands that focuses on Bat recordings for research. As niche as the company’s expertise sounds, there are currently no direct competitor that can deliver the quality and the price point Dodotronics’s Mini microphone can offer. Without any alternatives, I have decided to create my own ultrasonic microphone that roughly covers the sensitivities of 50kHz to 80kHz that can compete against Dodotronic’s Mini Microphone.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Jun 17, 2018</span> 4 min read</p>
-   
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://lucasmun.me/post/building-a-handheld-raspberry-pi/building-a-handheld-raspberry-pi-nintendo-switch/" title="Building a Handheld Raspberry Pi Nintendo Switch" class="entry-link">Building a Handheld Raspberry Pi Nintendo Switch</a></h3>
-  </header>
-
-  <p class="entry-summary">Building a Handheld Raspberry Pi Nintendo Switch Introduction When Nintendo’s Nintendo Switch was first introduced, I thought it was the perfect platform to game on the go. Ever since my Nintendo DS I got as a birthday present during my 6th grade birthday, I haven’t found any decent replacement for my on the go gaming need.
-Nintendo Switch’s design with its nice crispy 6 inch screen with detachable controller design inspired me to pursue my own handheld design.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Jun 17, 2018</span> 3 min read</p>
-   
-  </footer>
-</article>
-
-      
-    
-    
+      <div class="sharing">
+        <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2flucasmun.me%2fpost%2flcd-problem-with-anet-a8%2f" title="Share on Facebook"></a>
+        <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text=LCD%20Problem%20%28two%20line%20of%20boxes%29%20with%20Anet%20A8%203D%20Printer&amp;url=https%3a%2f%2flucasmun.me%2fpost%2flcd-problem-with-anet-a8%2f" title="Share on Twitter"></a>
+        <a class="share share-google" target="_blank" href="https://plus.google.com/share?url=LCD%20Problem%20%28two%20line%20of%20boxes%29%20with%20Anet%20A8%203D%20Printer&amp;url=https%3a%2f%2flucasmun.me%2fpost%2flcd-problem-with-anet-a8%2f" title="Share on Google+"></a>
+      </div>
+    </footer>
   </section>
   <footer class="footer">
   <p>Copyright © 2018-2019 Lucas Mun&#39;s Engineering Blog</p>

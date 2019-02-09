@@ -30,5 +30,17 @@ Nintendo Switch&amp;rsquo;s design with its nice crispy 6 inch screen with detac
       <description>Introduction Dodotronics is one of the few reputable microphone brands that focuses on Bat recordings for research. As niche as the company&amp;rsquo;s expertise sounds, there are currently no direct competitor that can deliver the quality and the price point Dodotronics&amp;rsquo;s Mini microphone can offer. Without any alternatives, I have decided to create my own ultrasonic microphone that roughly covers the sensitivities of 50kHz to 80kHz that can compete against Dodotronic&amp;rsquo;s Mini Microphone.</description>
     </item>
     
+    <item>
+      <title>LCD Problem (two line of boxes) with Anet A8 3D Printer</title>
+      <link>https://lucasmun.me/post/lcd-problem-with-anet-a8/</link>
+      <pubDate>Sun, 17 Jun 2018 17:11:45 -0400</pubDate>
+      
+      <guid>https://lucasmun.me/post/lcd-problem-with-anet-a8/</guid>
+      <description>This was originally posted on Wordpress.com. This post was migrated on 2/3/2019
+  Welcome   Two line of boxes are shown in the 2004A LCD.
+Do you have this problem and don&amp;rsquo;t want to read it over? Check if your pin 5 or the r/w pin is connected to ground. Also, check your little potentiometer at the back to see if your LCD contrast isn&amp;rsquo;t too high.
+Down the rabbit hole we go.</description>
+    </item>
+    
   </channel>
 </rss>
