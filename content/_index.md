@@ -12,4 +12,4 @@ Thanks you for visiting!
 
 -Lucas Mun
 
-Resume [Resume 2019 Resume Download](../static/2019.pdf)
+[Resume 2019 Resume Download](../2019.pdf)
