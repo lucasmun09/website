@@ -6,7 +6,7 @@ draft: false
 
 Hi there! 
 
-I am currently a student at Virginia Tech pursuing computer engineering degree! The purpose of this blog is to document interesting projects I do and share it with others! I hope you will find these projects interesting as I have!
+I am currently a student at Virginia Tech pursuing computer engineering degree! The purpose of this blog is to document interesting projects I do and share it with others! I hope you will find these projects as interesting as I have!
 
 Thanks you for visiting!
 

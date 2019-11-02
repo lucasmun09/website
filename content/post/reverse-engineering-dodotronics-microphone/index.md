@@ -1,26 +1,36 @@
 ---
-title: Creating an Ultrasonic Microphone
+title: Reverse Engineering Dodotronics Microphone
 date: 2018-06-17T17:11:45-04:00
 draft: false
 ---
 
 ## Introduction
 
-Dodotronics is one of the few reputable microphone brands that focuses on Bat recordings for research. As niche as the company's expertise sounds, there are currently no direct competitor that can deliver the quality and the price point Dodotronics's Mini microphone can offer. Without any alternatives, I have decided to create my own ultrasonic microphone that roughly covers the sensitivities of 50kHz to 80kHz that can compete against **Dodotronic's Mini** **Microphone**. 
+Dodotronics is one of the few reputable microphone brands that focuses on Bat and ultrasonic frequency acquisition for research. As niche as the company's expertise sounds, there are currently no direct competitor that can deliver the quality and the price point Dodotronics's Mini microphone can offer with the performance. Without any alternatives in the market, I have decided to design my own ultrasonic microphone that roughly covers the sensitivities of 50kHz to 80kHz that may compete against **Dodotronic's Mini** **Microphone**. 
 
 ## Dodotronic's Mini Microphone
 
-The Dotronics Mini microphone (I will be referring as Mini-Mic) utilizes FG-23629, a MEMS microphone, which is rated between 100Hz to 10kHz. By no means, I cannot say for sure that this microphone module cannot handle frequencies above 10kHz range but without any further sensitivity measurements, it is impossible to know the integrity of the signal without an anechoic chamber with calibrated speakers. In any case above 10kHz, the current Mini-Mic is not acceptable to be used in research settings due to lack of documentation for the ultrasonic frequencies.
+The Dotronics Mini microphone (I will be referring as Mini-Mic) utilizes FG-23629, a MEMS microphone, which is rated between 100Hz to 10kHz. This sensor seems to be designed to be used with hearing aids due to small capsulated design.
+
+ By no means, I cannot say for sure that this microphone module cannot handle frequencies above 10kHz range but without any further sensitivity measurements, it is impossible to know the integrity of the signal without an anechoic chamber with calibrated speakers. 
+
+<hr/>
+
+2/15/2019
+
+Dr.Roan, a professor at Virginia Tech's Department of Mechanical Engineering has tested this microphone in his anechoic chamber. I will try to pull up the frequency response graph when I have permission to do so.
+
+---
+
+In any case above 10kHz, the current Mini-Mic is not acceptable to be used in research settings due to lack of documentation for the ultrasonic frequencies.
 
 Link to the microphone: https://www.digikey.com/product-detail/en/knowles/FG-23629-P16/423-1064-ND/697725
 
 ![1531614976487](FG_sensitivty.png)
 
-The Mini-Mic has offered variety of features that is very beneficial in a research setting. The min-mic is one of the smallest microphone that is waterproof, dust-proof, and in some-what readily available form-factor/connector (Weipu). 
+The Mini-Mic has offered variety of features that is very beneficial in a research setting. The Mini-Mic is a small microphone that is waterproof, dust-proof, and in some-what readily available form-factor/connector online (Weipu).
 
-![1531615736635](wcasing.png)
-
-![1531616249219](wocasing.png)
+<img src="wcasing.png" width="500">
 
 
 
@@ -29,6 +39,10 @@ The Mini-Mic has offered variety of features that is very beneficial in a resear
 
 
 
+
+
+
+<img src="wocasing.png" width="500">
 
 ## Reversing the Mini-Mic
 
@@ -62,7 +76,7 @@ The internal electric composition of the Mini-Mic is very simple. The new microp
 
 
 
-## Designing the Microphone
+## Design of the Microphone
 
 All variants of Knowle's FG-23629 are rated between 10Hz to 10kHz so a different microphone sensor needs to be adapted into the design that can fit a wider frequency range. One candidate I was no other than SPU0410LR5H-QB, another sensor from Knowle's.
 
@@ -74,7 +88,7 @@ In this post,  FG-23629 will be used to explore and replicate Dodotronic's micro
 
 ![dodoschematicwithvalues](fromdodo.png)
 
-It can be seen clearly with this schematic and cross-referencing the parts that the Dodotronics has two amplifier IC and high pass filters set on them. By using a component meter that I have received from China, I was able to decode the resistor and capacitor values.
+It can be seen clearly that this schematic and cross-referencing the parts that the Dodotronics has two amplifier IC and high pass filters set on them. By using a component meter that I have received from China, I was able to decode the resistor and capacitor values.
 
 From the calculations I have done, both amplifiers has the threshold frequency of 1.6kHz, presumably to reduce the signal saturation. From what I gathered, these amplifiers have the slew-rate at least of 2V/uS to be able to accurately amplify a signal of 100kHz.  This value was found by using the equation:
 
@@ -87,12 +101,6 @@ $$
 Fortunately, the 2V/us was the absolute minimum, and it was easier to find op-amps with higher slew rate. The amplifier that I found suitable was MCP6291T. It is the same SOT 23-3 package as the amplifiers inside the Dodotronics' microphones. 
 
  
-
-## Design of the Duck Microphone
-
-
-
-The DUCK microphone is heavily inspired by the Dodotronic's layout. The slimline and conoured shape towards the microphone sensor was used for the maximum 
 
 
 
