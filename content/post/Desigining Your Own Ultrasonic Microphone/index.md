@@ -1,12 +1,12 @@
 ---
 title: Designing Your Own Ultrasonic Microphone
 date: 2019-04-16T17:11:45-04:00
-draft: false
+draft: true
 ---
 
 # Designing Your Own Research Grade Ultrasonic Microphone
 
-Designing a microphone is way harder than it seems. I have only been working with digital electronics as long as I can remember.  I learned the hard way that dealing with analog electronics with small voltages (less than 3.3 V)  is a huge hassle. 
+Designing a microphone is much harder than it seems. I have only been working with digital electronics as long as I can remember.  I learned the hard way that dealing with analog electronics with small voltages (less than 3.3 V)  is a huge hassle. 
 
 Lower the voltage = easier to be susceptible to noise!
 
@@ -30,7 +30,7 @@ In one of my previous posts where I reverse engineer the Dodotronics microphone,
 
 The microphone simply consisted of a MOSfet to act as a shut down, two amplifiers to amplify the signal, and bunch of supporting passive components that makes the chips work. Finally, the main sensor, Knowles FG sensor's datasheet description indicates that it can be used for hearing aids. 
 
-Over all, I designed my microphone down into three chunks; Sensor, amplification, and power. 
+Over all, I selected the microphone components down into three chunks; Sensor, amplification, and power. 
 
 
 

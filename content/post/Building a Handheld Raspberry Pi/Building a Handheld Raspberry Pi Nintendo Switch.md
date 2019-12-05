@@ -15,11 +15,12 @@ For many years, I have been interested in having computing on the go since the P
 
 These are some portable hand held consoles I have always been eyeballing:
 
-- GPH GP2x Caanoo - GameParkHolding's Final handheld Linux console
+- GPH GP2x Caanoo - GamePark-Holding's final handheld Linux console
 - GPH GP2x Wiz - Predecessor to GP2x Caanoo 
 - Open Pandora (Now known as PYRA) - The perfect, yet super expensive for a high schooler or college Linux computer platform
-- Dingoo - Some Chinese off the mill emulatino handheld that resembles Gameboy Micro 
+- Dingoo - Some Chinese off the mill emulatinon handheld that resembles Gameboy Micro 
 - GCW Zero - A Kickstarter campaign that my parents didn't let me buy and is now very hard to find.
+- GPD Handhelds (Windows 10/ Android) - A spiritual copy of Open Pandora (Pyra)
 
 These aren't your traditional "Nintendo DS" or "PSP" handhelds. All of these devices have some sort of "open source" operating system where I can program and load in programs that other people have made on the go. All of these clock a variant of ARM processor that run Linux in its core.  Unfortunately, many of these handheld gaming handhelds have been defunct since around 2013, and it seems like the support community has been dwindling since its easier to get a PSP these days and just run a custom firmware on it. I am not too sure but for a while, there hasn't been a new contender in the field in the handheld market that provides everything I want while delivering it at the price point where it won't cost me an arm and a leg. 
 
@@ -37,11 +38,11 @@ Nintendo Switch's official dimensions can be found on the American Nintendo's we
 
 https://www.nintendo.co.uk/Nintendo-Switch/Specifications/Specifications-1176277.html#1
 
-In the official size dimensions it is said that "102mm x 239mm x 13.9mm (with Joy-Con attached)" or for rest of the Americans, "the body is 4 inches high, 9.4 inches long, and .55 inches deep". 
+In the official size dimensions describe that the main body console's body is "102mm x 239mm x 13.9mm (with Joy-Con attached)" or for rest of the Americans, "the body is 4 inches high, 9.4 inches long, and .55 inches deep". 
 
 ### Joy-Con Holders
 
-
+Joy 
 
 ## Electronics (Making Raspberry Pi Portable)
 
