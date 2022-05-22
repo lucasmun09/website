@@ -17,86 +17,21 @@ $ rm -rf hugo-lamp/.git
 
 *For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.*
 
-## Configuration
+## Guides
 
-Take a look inside the [exampleSite](https://github.com/huyb1991/hugo-lamp/tree/master/exampleSite) at `config.toml` and update by your own:
+#### Content Editing
+  - [Add image to article](/docs/guide.md#add-image-to-article-content)
+  - [Content config for SEO](/docs/guide.md#content-config-for-seo)
+  - [Add icon](/docs/guide.md#add-icon)
+  - [Customize Theme](/docs/guide.md#customize-theme)
 
-### Site Info
-```toml
-# Base config for your site
-baseURL = "http://localhost:1313/"      # Your domain
-languageCode = "en-us"
-title = "Hugo LAMP"                     # Default site title
-theme = "hugo-lamp"
-googleAnalytics = "UA-XXXXXXXX-X"       # Google Analytics UA number
-```
-
-### Main Menu
-```toml
-[[menu.main]]
-  name = "Hugo"
-  weight = 1
-  identifier = "hugo"
-  url = "/hugo/"
-[[menu.main]]
-  name = "AMP Project"
-  weight = 2
-  identifier = "amp"
-  url = "/amp/"
-[[menu.main]]
-  name = "Tags"
-  weight = 3
-  identifier = "tags"
-  url = "/tags/"
-```
-
-### Taxonomies
-For more details, take a look on official document for [taxonomies](https://gohugo.io/content-management/taxonomies/)
-
-```toml
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-```
-
-### SEO
-```toml
-[params]
-  subtitle = "Light responsive AMP theme"
-  author = "Huy Nguyen"                     # Your name
-  logo = "/img/avatar.jpg"                  # Logo
-  description = "A light responsive Hugo AMP theme for blogger"          # Meta description tag
-  paginate = 10
-
-  # SEO configs
-  seotitle = "Hugo Blog Title (SEO Version)"                  # Overwrite site title for SEO purpose
-  googleSiteVerification = "google_site_verification_code"    # Google Webmaster
-  msValidate = "bing_site_verification_code"                  # Bing Webmaster
-```
-
-### Publisher
-Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](https://www.ampproject.org/docs/reference/components/amp-auto-ads) for future.
-
-```toml
-  # Google Adsense
-  adsensePublisher = "ca-pub-XXX"       # Required if you want to include Google Adsense
-  adsenseSlot = "XXX"                   # Required slot to display ads
-  adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
-```
-
-### Social networks & connections
-```toml
-  # Social networks
-  email = "name@domain.com"
-  github = "github_username"
-  twitter = "twitter_username"
-  linkedin = "linkedin_username"
-  facebook = "facebook_username"
-  google = "googleplus_id_number"
-  instagram = "instagram_username"
-  youtube = "youtube_username"
-  dribbble = "dribbble_username"
-```
+#### Site Configuration
+  - [Site Info](/docs/guide.md#site-info)
+  - [Main Menu](/docs/guide.md#main-menu)
+  - [Taxonomies](/docs/guide.md#taxonomies)
+  - [SEO](/docs/guide.md#seo)
+  - [Publisher](/docs/guide.md#publisher)
+  - [Social Networks & Connections](/docs/guide.md#social-networks--connections)
 
 ## Contributing
 
